@@ -12,12 +12,12 @@ struct SearchMovie: Codable {
     
     var search : [SearchMovieDetails]?
     var totalResults : String?
-    var response : ResponseResult?
+    var response : String?
     
     init(dictionary : [String: Any]) {
         search = dictionary["Search"] as? [SearchMovieDetails]
         totalResults = dictionary["totalResults"] as? String
-        response = dictionary["Response"] as? ResponseResult
+        response = dictionary["Response"] as? String
     }
 }
 

@@ -16,6 +16,7 @@ class MovieCustomTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var typeView: UIView!
     
     
     //MARK: - Properties
@@ -33,11 +34,13 @@ class MovieCustomTableViewCell: UITableViewCell {
         typeLabel.text = searchMovieDetails.type
         
         if searchMovieDetails.type == "movie" {
-            self.backgroundColor =  UIColor.init(named: "movieTypeTableCellBackground")
+            typeView.backgroundColor =  UIColor.init(named: "movieTypeTableCellBackground")
         } else if searchMovieDetails.type == "series" {
-            self.backgroundColor =  UIColor.init(named: "seriesTypeTableCellBackground")
+            typeView.backgroundColor =  UIColor.init(named: "seriesTypeTableCellBackground")
         } else if searchMovieDetails.type ==  "episode" {
-            self.backgroundColor =  UIColor.init(named: "episodeTypeTableCellBackground")
+            typeView.backgroundColor =  UIColor.init(named: "episodeTypeTableCellBackground")
+        } else if searchMovieDetails.type ==  "game" {
+            typeView.backgroundColor =  UIColor.init(named: "gameTypeTableCellBackground")
         }
         
     }
