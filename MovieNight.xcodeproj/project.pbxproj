@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06177C1F239A8B9100FA8FC5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C1E239A8B9100FA8FC5 /* Service.swift */; };
 		06177C22239AB10100FA8FC5 /* SearchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C21239AB10100FA8FC5 /* SearchMovie.swift */; };
 		06177C24239AB2CA00FA8FC5 /* SearchMovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C23239AB2CA00FA8FC5 /* SearchMovieDetails.swift */; };
 		06177C28239AB9CC00FA8FC5 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C27239AB9CC00FA8FC5 /* AlertPresenter.swift */; };
-		06177C2B239ABA4600FA8FC5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C2A239ABA4600FA8FC5 /* Reachability.swift */; };
 		06177C2D239ABEA900FA8FC5 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C2C239ABEA900FA8FC5 /* Connectivity.swift */; };
 		06177C2F239AC05F00FA8FC5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06177C2E239AC05F00FA8FC5 /* SearchViewController.swift */; };
 		063B0743239AF1720069AC67 /* MovieCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B0742239AF1720069AC67 /* MovieCustomTableViewCell.swift */; };
+		064B2B3B239D8A9F007121D9 /* MovieDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B2B3A239D8A9F007121D9 /* MovieDetailsTableViewCell.swift */; };
+		064B2B3D239D8ABC007121D9 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B2B3C239D8ABC007121D9 /* DetailsMovieViewController.swift */; };
 		067EB14423999C2E00CA6C69 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EB14323999C2D00CA6C69 /* MovieDetails.swift */; };
 		06A99E262399337B0093EE0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A99E252399337B0093EE0E /* AppDelegate.swift */; };
 		06A99E282399337B0093EE0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A99E272399337B0093EE0E /* SceneDelegate.swift */; };
@@ -45,14 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06177C1E239A8B9100FA8FC5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		06177C21239AB10100FA8FC5 /* SearchMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovie.swift; sourceTree = "<group>"; };
 		06177C23239AB2CA00FA8FC5 /* SearchMovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieDetails.swift; sourceTree = "<group>"; };
 		06177C27239AB9CC00FA8FC5 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
-		06177C2A239ABA4600FA8FC5 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		06177C2C239ABEA900FA8FC5 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		06177C2E239AC05F00FA8FC5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		063B0742239AF1720069AC67 /* MovieCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomTableViewCell.swift; sourceTree = "<group>"; };
+		064B2B3A239D8A9F007121D9 /* MovieDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		064B2B3C239D8ABC007121D9 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
 		067EB14323999C2D00CA6C69 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		06A99E222399337B0093EE0E /* MovieNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A99E252399337B0093EE0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,22 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06177C1C239A8B7400FA8FC5 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				06177C1D239A8B7E00FA8FC5 /* REST */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		06177C1D239A8B7E00FA8FC5 /* REST */ = {
-			isa = PBXGroup;
-			children = (
-				06177C1E239A8B9100FA8FC5 /* Service.swift */,
-			);
-			path = REST;
-			sourceTree = "<group>";
-		};
 		06177C20239AB0EC00FA8FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				06177C27239AB9CC00FA8FC5 /* AlertPresenter.swift */,
-				06177C2A239ABA4600FA8FC5 /* Reachability.swift */,
 				06177C2C239ABEA900FA8FC5 /* Connectivity.swift */,
+				064B2B3A239D8A9F007121D9 /* MovieDetailsTableViewCell.swift */,
 				063B0742239AF1720069AC67 /* MovieCustomTableViewCell.swift */,
 			);
 			path = View;
@@ -163,6 +147,7 @@
 			children = (
 				06A99E292399337B0093EE0E /* SplashViewController.swift */,
 				06177C2E239AC05F00FA8FC5 /* SearchViewController.swift */,
+				064B2B3C239D8ABC007121D9 /* DetailsMovieViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				067EB13F2399907C00CA6C69 /* Utilities */,
-				06177C1C239A8B7400FA8FC5 /* Service */,
 				06177C29239AB9D100FA8FC5 /* View */,
 				06177C20239AB0EC00FA8FC5 /* Model */,
 				067EB141239990BA00CA6C69 /* Controller */,
@@ -428,11 +412,11 @@
 				063B0743239AF1720069AC67 /* MovieCustomTableViewCell.swift in Sources */,
 				06177C24239AB2CA00FA8FC5 /* SearchMovieDetails.swift in Sources */,
 				06A99E2A2399337B0093EE0E /* SplashViewController.swift in Sources */,
+				064B2B3B239D8A9F007121D9 /* MovieDetailsTableViewCell.swift in Sources */,
 				06A99E262399337B0093EE0E /* AppDelegate.swift in Sources */,
 				06177C22239AB10100FA8FC5 /* SearchMovie.swift in Sources */,
-				06177C1F239A8B9100FA8FC5 /* Service.swift in Sources */,
+				064B2B3D239D8ABC007121D9 /* DetailsMovieViewController.swift in Sources */,
 				06177C2F239AC05F00FA8FC5 /* SearchViewController.swift in Sources */,
-				06177C2B239ABA4600FA8FC5 /* Reachability.swift in Sources */,
 				06177C2D239ABEA900FA8FC5 /* Connectivity.swift in Sources */,
 				067EB14423999C2E00CA6C69 /* MovieDetails.swift in Sources */,
 				06A99E282399337B0093EE0E /* SceneDelegate.swift in Sources */,

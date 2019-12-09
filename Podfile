@@ -6,7 +6,8 @@ target 'MovieNight' do
   use_frameworks!
   
   pod 'Alamofire'
-  
+  pod 'AlamofireImage', '~> 3.5'
+
 
 
 end

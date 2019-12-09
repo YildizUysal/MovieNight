@@ -43,11 +43,11 @@ class SplashViewController: UIViewController {
     
     //MARK: - Function
     func animationLabel() {
-           UIView.animate(withDuration: 0.8,
-                          delay:0.4,
-                          options:[.allowUserInteraction, .curveEaseInOut, .autoreverse, .repeat],
-                          animations: { self.titleLabel.alpha = 0 },
-                          completion: nil)
-       }
+        UIView.animate(withDuration: 0.8,
+                       delay:0.4,
+                       options:[.allowUserInteraction, .curveEaseInOut, .autoreverse, .repeat],
+                       animations: { self.titleLabel.alpha = 0 },
+                       completion: nil)
+    }
 }
 
